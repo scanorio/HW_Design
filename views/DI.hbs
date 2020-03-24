@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>HW DESIGN</title>
+    <style>
+        body {
+          font-family: "Montserrat";
+          font-weight: light;
+        }
+
+
+        
+        .sidenav {
+          height: 100%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(255, 253, 253);
+          overflow-x: hidden;
+          padding-top: 200px;
+          padding-left:30px;
+        }
+        
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 10px;
+          color: #000000;
+          display: block;
+        }
+        
+        .sidenav a:hover {
+          font-weight: bold;
+        }
+        
+
+     
+       .logo {
+          width: 20%;
+          height:auto;
+          margin-top:20px;
+          margin-bottom: 30px;
+        }
+        </style>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid" style="padding:5%;margin-left: 25%;background-color: #95e8fc">
+    <div class="container">
+     <h1 class="display-4" style="font-family: Montserrat; font-weight: bold;color: black;font-size: 100px;padding-bottom: 0px;">Diseño</h1>
+     <h1 class="display-4" style="font-family: Montserrat; font-weight: bold;color: white;font-size: 100px;">Industrial</h1>
+     <hr>
+     <br>
+     <p class="lead">Desde conceptos a prototipos, sin diferenciar pequeñas de grandes escalas, se ofrecen modelado y renders de alta calidad</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+       <div class="sidenav col-3">
+          <nav class="NavBar">
+             <a link href="Admin"><img src="\images\LOGO.png" class="logo" alt="" id="admin"></a>
+             <a link href="Ilustracion" id="Ilustracion">Ilustracion</a>
+             <a link href="DG" id="DG">Diseño gráfico</a>
+             <a link href="DI" id="DI">Diseño industrial</a>
+             <a link href="Contacto" id="Contacto">Contacto</a>
+          </nav>
+       </div> 
+     </div> 
+
+   <div class="w3-center" style="margin-left: 25%;">
+      <div class="w3-content w3-section" style="max-width:900px">
+        <img class="mySlides" src="\images\DI1.jpg" style="width:100%;">
+        <img class="mySlides" src="\images\DI2.jpg" style="width:100%;">
+        <img class="mySlides" src="\images\DI3.jpg" style="width:100%;">
+        <img class="mySlides" src="\images\DI4.png" style="width:100%;">
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); 
+      }
+      </script>
+
+    </div>
+ 
+   <br>
+    <h2 style="margin-left:25%; font-weight: bold;font-family:Montserrat;margin-top:3%;margin-bottom:3%;font-size: 70px;">Programas</h2>
+    <div class="row" style="margin-left:25%; padding:2%;margin-right:2%;">
+      <div class="col-6"><img src="https://i.ytimg.com/vi/O2V_o2a6Fvs/maxresdefault.jpg" alt="" style="width:300px;height:auto;"></div>
+      <div class="col-6"><h2 style="font-weight: bold;">Rhinocerous</h2> Rhinocerous es un sofware puede crear, editar, analizar, documentar, renderizar, animar y traducir curvas NURBS*, superficies y sólidos, nubes de puntos y mallas poligonales. No hay límite de complejidad, grado o tamaño, a parte del que posea su hardware.</div>
+    </div>
+     <div class="row" style="margin-left:25%; padding:2%;margin-right:2%;background-color: #dbdbdb;">
+      <div class="col-6"><h2 style="font-weight: bold;">Solidworks</h2>Solidworks es un software de diseño CAD para modelar piezas y ensamblajes en 3D y planos en 2D. Ofrece la posibilidad de crear, diseñar, simular, fabricar, publicar y gestionar los datos del proceso de diseño.</div>
+      <div class="col-6"><img src="https://www.plm.automation.siemens.com/media/global/es/Mechanical-Design-Management-Solidworks-Integration_tcm54-26411.jpg" alt=""style="width:300px;height:auto;"></div>
+    </div>   
+    <div class="row" style="margin-left:25%; padding:2%;margin-right:2%;">
+      <div class="col-6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRA-Tb3ri0YgTlhos7Sd5V000bWYrNCH3YUVOfGL5oRUYJjw_5y" alt="" style="width:300px;height:auto;"></div>
+      <div class="col-6"><h2 style="font-weight: bold;">Rendering</h2>Es una técnica que permite renderizar objetos mediante tecnicas tradicionales como lapiz de color, marcadores, estilógrafo y pastel.</div>
+    </div>
+    <div class="row" style="margin-left:25%; padding:2%;margin-right:2%;background-color: #dbdbdb;">
+      <div class="col-6"><h2 style="font-weight: bold;">Keyshot</h2>Keyshot es el software más fácil y rápido para la renderización y animación 3D en el mercado. En pocos pasos podes crear imágenes impresionantes de tus modelos 3D que pueden ser usadas a lo largo de todo el desarrollo del producto para hacer decisiones acerca del diseño.</div>
+      <div class="col-6"><img src="https://www.3dcadportal.com/images/stories/luxion/2019/keyshot-9-gpu-nvidia.jpg" alt=""style="width:300px;height:auto;"></div>
+    </div>   
+    </div>
+  </div>
+    
+
+</body>
+</html>

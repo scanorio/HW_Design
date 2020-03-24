@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>HW DESIGN</title>
+    <style>
+        body {
+          font-family: "Montserrat";
+          font-weight: light;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 300px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(255, 253, 253);
+          overflow-x: hidden;
+          padding-top: 200px;
+          padding-left:30px;
+        }
+        
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 10px;
+          color: #000000;
+          display: block;
+        }
+        
+        .sidenav a:hover {
+          font-weight: bold;
+        }
+        
+        .main {
+          margin-left: 25%;
+          background-color: #000000;
+          font-size: 28px;
+        }
+     
+       .logo {
+          width: 20%;
+          height:auto;
+          margin-top:20px;
+          margin-bottom: 30px;
+        }
+        </style>
+</head>
+<body>
+
+    </div>
+      <div class="sidenav">
+        <div class="sidenav col-3">
+          <nav class="NavBar">
+             <a link href="Admin"><img src="\images\LOGO.png" class="logo" alt="" id="admin"></a>
+             <a link href="Ilustracion" id="Ilustracion">Ilustracion</a>
+             <a link href="DG" id="DG">Diseño gráfico</a>
+             <a link href="DI" id="DI">Diseño industrial</a>
+             <a link href="Contacto" id="Contacto">Contacto</a>
+          </nav>
+        </div>
+     </div>
+    
+     //formulario mail
+
+    <div class="main"  style="padding: 5%;">
+      <div class="jumbotron jumbotron-fluid" style="padding:5%;background-color: black">
+        <div class="container">
+         <h1 class="display-4" style="font-family: Montserrat; font-weight: bold;color: white;font-size: 100px;padding-bottom: 0px;">Contacto</h1>
+         <h1 class="display-4" style="font-family: Montserrat; font-weight: bold;color: black;-webkit-text-stroke-width: 2px; -webkit-text-stroke-color: white; font-size: 100px;">Contactame</h1>
+         <hr>
+        </div>
+      </div>
+      <form method="post" action="/Contacto">
+
+        {{#if status}}
+           <h5 class="alert alert-success text-center">{{message}}</h5>
+        {{/if}}
+
+        <div>
+          <div class=" form-group" style="font-size: 10px;color: white;">
+             <label for="correo">Mail</label>
+             <input type="email" class="form-control" id="correo"  name="correo" placeholder="nombre@gmail.com" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+          </div>
+
+          <div class="form-group"  style="color: white;font-size: 10px;">
+            <label for="comentario">Comentario</label>
+            <textarea class="form-control" id="comentario"  name="comentario" rows="3" placeholder="Escribí aca" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-light">Enviar</button>
+
+
+        <p class="lead" style="margin-top:10%; color: black; font-size: 50px;font-family: Montserrat; font-weight: bold;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: white">Comunicate conmigo y hagamos tu proyecto realidad.</p>
+
+       </form>
+
+    </div>
+
+</body>
+</html>

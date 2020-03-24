@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>HW DESIGN</title>
+    <style>
+        body {
+          font-family: "Montserrat";
+          font-weight: light;
+        }
+
+
+        
+        .sidenav {
+          height: 100%;
+          width: 300px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(255, 253, 253);
+          overflow-x: hidden;
+          padding-top: 200px;
+          padding-left:30px;
+        }
+        
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 10px;
+          color: #000000;
+          display: block;
+        }
+        
+        .sidenav a:hover {
+          font-weight: bold;
+        }
+        
+
+       .logo {
+          width: 20%;
+          height:auto;
+          margin-top:20px;
+          margin-bottom: 30px;
+        }
+
+        .mySlides {display:none;}
+        </style>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid" style="padding:5%;margin-left: 25%;background-color: #fad369;">
+    <div class="container">
+     <h1 class="display-4" style="font-family: Montserrat; font-weight: bold;color: black;font-size: 100px;padding-bottom: 0px;">Diseño</h1>
+     <h1 class="display-4" style="font-family: Montserrat; font-weight: bold;color: white;font-size: 100px;">Gráfico</h1>
+     <hr>
+     <br>
+     <p class="lead">Desde ilustraciones e infografías a logos e identidad de marca, se mezclan renders, vectorización y fotomontaje.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+
+     <div class="sidenav col-3">
+          <nav class="NavBar">
+             <a link href="Admin"><img src="\images\LOGO.png" class="logo" alt="" id="admin"></a>
+             <a link href="Ilustracion" id="Ilustracion">Ilustracion</a>
+             <a link href="DG" id="DG">Diseño gráfico</a>
+             <a link href="DI" id="DI">Diseño industrial</a>
+             <a link href="Contacto" id="Contacto">Contacto</a>
+          </nav>
+    </div> 
+  </div>
+
+   <div class="w3-center" style="margin-left: 25%;">
+      <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="\images\DG1.png" style="width:100%">
+        <img class="mySlides" src="\images\DG2.jpg" style="width:100%">
+        <img class="mySlides" src="\images\DG3.jpg" style="width:100%">
+        <img class="mySlides" src="\images\DG4.jpg" style="width:100%">
+        <img class="mySlides" src="\images\DG5.jpg" style="width:100%">
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); 
+      }
+      </script>
+
+    </div>
+ 
+  <br>
+
+    <h2 style="margin-left:25%; font-weight: bold;font-family:Montserrat;font-size: 70px; margin-top:3%;margin-bottom:3%;">Programas</h2>
+    <div class="row" style="margin-left:25%; padding:2%;margin-right:2%;">
+      <div class="col-6"><img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/bbdedd58-96bf-11e6-ab2f-00163ed833e7/1034221620/adobe-photoshop-smart-object-to-layer.png" alt="" style="width:300px;height:auto;"></div>
+      <div class="col-6"><h2 style="font-weight: bold;">Photoshop</h2>Adobe Photoshop es un editor de gráficos rasterizados usado principalmente para el retoque de fotografías y gráficos.</div>
+    </div>
+     <div class="row" style="margin-left:25%; padding:2%;margin-right:2%;background-color: #dbdbdb;">
+      <div class="col-6"><h2 style="font-weight: bold;">Ilustrator</h2>Adobe Illustrator es un editor de gráficos vectoriales en forma de taller de arte que trabaja sobre un tablero de dibujo, conocido como «mesa de trabajo» y está destinado a la creación artística de dibujo y pintura para ilustración.</div>
+      <div class="col-6"><img src="https://www.educadictos.com/wp-content/uploads/2018/02/Portada-illustrator.jpg" alt=""style="width:300px;height:auto;"></div>
+    </div>   
+    <div class="row" style="margin-left:25%; padding:2%;margin-right:2%;">
+      <div class="col-6"><img src="https://www.campusmvp.es/recursos/image.axd?picture=/2019/2T/editores-html-css-js/portada-editores.jpg" alt="" style="width:300px;height:auto;"></div>
+      <div class="col-6"><h2 style="font-weight: bold;">HTML + CSS</h2>CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los documentos electrónicos definidos con HTML y XHTML. CSS es la mejor forma de separar los contenidos y su presentación y es imprescindible para crear páginas web complejas.</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>HW DESIGN</title>
+    <style>
+        body {
+          font-family: "Montserrat";
+          font-weight: light;
+        }
+
+
+        
+        .sidenav {
+          height: 100%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(255, 253, 253);
+          overflow-x: hidden;
+          padding-top: 200px;
+          padding-left:30px;
+        }
+        
+        .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 10px;
+          color: #000000;
+          display: block;
+        }
+        
+        .sidenav a:hover {
+          font-weight: bold;
+        }
+        
+        .main {
+          background-color: black;
+          margin-left: 25%;
+          font-size: 28px;
+        }
+     
+       .logo {
+          width: 20%;
+          height:auto;
+          margin-top:20px;
+          margin-bottom: 30px;
+        }
+        </style>
+</head>
+<body>
+  
+  <div class="jumbotron jumbotron-fluid" style="padding:5%;margin-left: 25%;background-color:  #d1fa84">
+    <div class="container">
+       <h1 class="display-4" style="font-family: Montserrat; font-weight: bold;color: black;font-size: 130px;padding-bottom: 0px;">Bienvenide!</h1>
+       <hr>
+       <h1 class="display-4" style="font-family: Montserrat; font-weight: bold;color:  white; font-size: 130px;">Sentite en casa.</h1>
+       <br>
+    </div>
+  </div>  
+
+
+  <div class="container main">
+    <div class="row">
+        <div class="sidenav col-3">
+          <nav class="NavBar">
+             <a link href="Admin" id="Admin" ><img src="\images\LOGO.png" class="logo" alt="" id="admin"></a>
+             <a link href="Ilustracion"  id="Ilustracion">Ilustracion</a>
+             <a link href="DG" id="DG">Diseño gráfico</a>
+             <a link href="DI" id="DI">Diseño industrial</a>
+             <a link href="Contacto" id="Contacto">Contacto</a>
+          </nav>
+        </div>
+       
+
+      <div class="w3-center" style="padding:2%; ">
+        <div class="w3-content w3-section">
+          <img class="mySlides" src="\images\IlustracionAdmin.JPG" style="width:100%">
+          <img class="mySlides" src="\images\DI1.jpg" style="width:100%">
+          <img class="mySlides" src="\images\DG1.png" style="width:100%">
+        </div>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000); 
+          }
+          </script>
+          <hr>
+          <p class="lead" style="color: black; font-size: 50px;font-family: Montserrat; font-weight: bold;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #d1fa84;padding:5%;">Con experiencia en diseño industrial, gráfico e Ilustración, puedo aportar una solución integral a tus proyectos</p>
+    
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
